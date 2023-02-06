@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dinko_NewArrivals::new_arrivals"
+             title="New Arrivals"
+             translate="title"
+             module="Dinko_NewArrivals"
+             sortOrder="40"
+             parent="Magento_Catalog::catalog"
+             resource="Dinko_NewArrivals::new_arrivals"/>
+        <add id="Dinko_NewArrivals::dinko_new_arrivals"
+             title="Update New Arrivals"
+             translate="title"
+             module="Dinko_NewArrivals"
+             sortOrder="10"
+             parent="Dinko_NewArrivals::new_arrivals"
+             resource="Dinko_NewArrivals::new_arrivals"
+             action="dinko_new_arrivals/index/update"/>
+    </menu>
+</config>

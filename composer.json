@@ -1,0 +1,28 @@
+{
+    "name": "dinko/module-new-arrivals",
+    "description": "Automatic category update for new products",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "require": {
+        "php": "~8.1.0",
+        "magento/framework": "*",
+        "magento/module-backend": "*",
+        "magento/module-catalog": "*",
+        "magento/module-store": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Dinko\\NewArrivals\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Dinko",
+            "email": "ilicicdinko@gmail.com",
+            "role": "Developer"
+        }
+    ]
+}
